@@ -1,3 +1,22 @@
+## Resume Principles
+- **Use consistent voice between longform resume updates**. It's nitpicky but ~obnoxious to endure. Rewrite it all if you have to, it pays dividends.
+- Use your Resume to seed interview questions about your experiences. **You don't need to write a novel, just the opening hook**.
+- A hiring manager will spend ~20 seconds looking at your resume, to inform a phonescreen decision, **no more than 1 page without a really good reason**.
+- Flavor and styling are great but optional and can distract from the objective of the doc. **Be easily digestible yet memorable**.
+- If an experience isn't contemporary and relevant to the role you're seeking, think on pruning it. **Does it spark joy?**.
+
+
+## Environment Setup
+
+1. Install a Latex distribution. This time, I went with the latest distribution from MacTeX (`.pkg` download)
+1. Install LaTeX Workshop VSCode extension.
+1. Configure the extension's recipe order to use XeLaTeX. This can be done by pressing `CMD + ,` and searching for `latex`. Dig around in that menu until you're editing JSON.
+
+In these three easy steps, Bob was my uncle.
+
+## Original Readme.txt
+
+```txt
 Deedy CV/Resume
 
 Original description:
@@ -15,3 +34,4 @@ Version:	  1.0 (5/5/2014)
 
 Status:           added by Papeeria Team, maintenance on demand
 Last update:      27 Jul 2017 
+```
