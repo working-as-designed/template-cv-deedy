@@ -8,7 +8,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1cm, vmargin=1cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=.5in, vmargin=.5in]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
 %----------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+\begin{textblock}{25}(72,3) % The position of the Last Updated text on the page (75% of the page across, 2% down). NOTE: Depending on the long/short month name, you may need to adjust this
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
 Last Updated on \today % Last Updated text
 \end{textblock}}
