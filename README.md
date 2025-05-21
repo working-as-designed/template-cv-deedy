@@ -10,7 +10,7 @@
 
 1. Install a Latex distribution. This time, I went with the latest distribution from MacTeX (`.pkg` download)
 1. Install LaTeX Workshop VSCode extension.
-1. Configure the extension's recipe order to use XeLaTeX. This can be done by pressing `CMD + ,` and searching for `latex`. Dig around in that menu until you're editing JSON.
+1. Configure the extension's recipe order to use `XeLaTeX`. This can be done by pressing `CMD + ,` and searching for `latex`. Dig around in that menu until you're editing JSON.
 
 In these three easy steps, Bob was my uncle.
 
