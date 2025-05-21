@@ -12,7 +12,29 @@
 1. Install LaTeX Workshop VSCode extension.
 1. Configure the extension's recipe order to use `XeLaTeX`. This can be done by pressing `CMD + ,` and searching for `latex`. Dig around in that menu until you're editing JSON.
 
-In these three easy steps, Bob was my uncle.
+If for whatever reason your environment can't find `latexmk` or `perl`, modify the settings.json with the following:
+```json
+    "latex-workshop.latex.tools": [
+        ...
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {
+                "PATH": "/usr/bin:/Library/TeX/texbin:${env:PATH}"
+            }
+        },
+        ...
+    ]
+```
+If PATHs are still broken at this stage, try adding `"PATH": "/usr/bin:/Library/TeX/texbin:${env:PATH}"` to additional `env:` keys.
 
 ## Original Readme.txt
 
